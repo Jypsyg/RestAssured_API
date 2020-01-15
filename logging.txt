@@ -1,0 +1,89 @@
+Request method:	POST
+Request URI:	http://216.10.245.166/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "Jypsy1",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "world cross centerrr",
+    "website": "https://rahulshettyacademy.com",
+    "language": "English",
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "types": [
+        "shoe park",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Wed, 15 Jan 2020 10:52:27 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+Accept-Ranges: none
+Via: HTTP/1.1 forward.http.proxy:3128
+Connection: keep-alive
+
+{
+    "status": "OK",
+    "place_id": "ea908d688ec4084bd06fae6d5d51cd6f",
+    "scope": "APP",
+    "reference": "a025b7cf4b70b664b5489532853f3a33a025b7cf4b70b664b5489532853f3a33",
+    "id": "a025b7cf4b70b664b5489532853f3a33"
+}
+Request method:	GET
+Request URI:	http://216.10.245.166/maps/api/place/get/json?key=qaclick123&place_id=ea908d688ec4084bd06fae6d5d51cd6f
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=ea908d688ec4084bd06fae6d5d51cd6f
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 15 Jan 2020 10:52:28 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+Accept-Ranges: none
+Via: HTTP/1.1 forward.http.proxy:3128
+Connection: keep-alive
+
+{
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "50",
+    "name": "Jypsy1",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "world cross centerrr",
+    "types": "shoe park,shop",
+    "website": "https://rahulshettyacademy.com",
+    "language": "English"
+}

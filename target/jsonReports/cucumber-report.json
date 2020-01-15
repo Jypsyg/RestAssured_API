@@ -1,0 +1,161 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-15T10:52:25.732Z",
+        "line": 13,
+        "name": "Verify place is being successfully added with AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api-s:;verify-place-is-being-successfully-added-with-addplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 976744500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": ": Add Place Payload with \"Jypsy1\" \"English\" \"world cross centerrr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jypsy1\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"world cross centerrr\"",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefination.add_Place_Payload_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1233901400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": ": user calls \"AddPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefination.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1358400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": ": the API calls is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 44
+                }
+              ],
+              "location": "stepDefination.the_API_calls_is_success_with_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 462951000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": ": \"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 2
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14735000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": ": \"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 2
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 547228500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": ": verify place_id created maps to \"Jypsy1\" using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jypsy1\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefination.verify_place_id_created_maps_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating place API\u0027s:",
+    "description": "",
+    "id": "validating-place-api-s:",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placeValidation.feature",
+    "tags": []
+  }
+]
